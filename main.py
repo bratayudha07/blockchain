@@ -40,7 +40,7 @@ for block in blockchain.chain:
 print("\nBlockchain valid:", blockchain.is_valid())
 
 print("\n=== PROOF OF WORK ===")
-difficulty = 4
+difficulty = 5
 
 # Block baru khusus buat demo mining, biar chain yang lama gak ikut berubah/invalid
 new_block = Block(

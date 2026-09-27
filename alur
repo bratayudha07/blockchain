@@ -1,0 +1,58 @@
+Mulai
+
+Buat smart contract "Electronic Health Record"
+
+    Siapkan tempat untuk menyimpan data batch EHR
+
+    Setiap batch memiliki:
+        id pasien
+        nama
+        keluhan
+        tindakan
+        obat
+
+==================================================
+1. MEMBUAT BACTH PASIEN
+==================================================
+Ketika pasien membuat batch:
+    input data pasien
+    membuat id batch
+    simpan data batch
+    pemilik = pasien
+    status = Created
+    simpan ke Blockchain
+
+==================================================
+2. MENGUBAH STATUS
+==================================================
+Ketika pemilik ingin mengubah status:
+    cari batch
+    periksa apakah pemanggil adalah pemilik
+    jika benar: 
+        ubah status
+        simpan perubahan Blockchain
+    jika salah:
+        tolak transaksi
+
+==================================================
+3. MELIHAT DATA PASIEN
+==================================================
+ketika seseorang ingin melihat batch:
+    masukkan id batch 
+    cari batch
+    tampilkan: 
+        nama pasien
+        keluhan 
+        tindakan
+        obat
+
+==================================================
+4. MELIHAT RIWAYAT
+==================================================
+ketika seseorang ingin melihat riwayat medis:
+    masukan id batch
+    ambil semua riwayat
+    tampilkan riwayat medis:
+            
+
+
